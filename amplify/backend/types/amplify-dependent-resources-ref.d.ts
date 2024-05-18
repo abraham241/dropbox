@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "auth": {
-    "dropbox22d33ce26": {
+    "mydropboxmainc4d09ecb": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
       "IdentityPoolId": "string",
@@ -11,12 +11,18 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
-    "dropbox2494aa21b": {
+    "mydropboxmaina58ed9cf": {
       "Arn": "string",
       "CloudWatchEventRule": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
       "Name": "string",
+      "Region": "string"
+    }
+  },
+  "storage": {
+    "s36720f61c": {
+      "BucketName": "string",
       "Region": "string"
     }
   }

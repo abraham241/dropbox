@@ -1,7 +1,6 @@
 {
-  "api": {},
   "auth": {
-    "dropbox22d33ce26": {
+    "mydropboxmainc4d09ecb": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -27,9 +26,17 @@
     }
   },
   "function": {
-    "dropbox2494aa21b": {
+    "mydropboxmaina58ed9cf": {
       "build": true,
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "mydropboxmainc4d09ecb"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
@@ -42,35 +49,19 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_dropbox2494aa21b_deploymentBucketName": {
+    "AMPLIFY_function_mydropboxmaina58ed9cf_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "dropbox2494aa21b"
+          "resourceName": "mydropboxmaina58ed9cf"
         }
       ]
     },
-    "AMPLIFY_function_dropbox2494aa21b_s3Key": {
+    "AMPLIFY_function_mydropboxmaina58ed9cf_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "dropbox2494aa21b"
-        }
-      ]
-    },
-    "AMPLIFY_function_dropbox2494aa21b_secretsPathAmplifyAppId": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "dropbox2494aa21b"
-        }
-      ]
-    },
-    "AMPLIFY_function_dropbox2494aa21b_variable": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "dropbox2494aa21b"
+          "resourceName": "mydropboxmaina58ed9cf"
         }
       ]
     },
@@ -91,5 +82,21 @@
       ]
     }
   },
-  "storage": {}
+  "storage": {
+    "s36720f61c": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ],
+          "category": "function",
+          "resourceName": "mydropboxmaina58ed9cf"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
 }
