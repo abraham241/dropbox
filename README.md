@@ -6,7 +6,7 @@ Dropbox is a file hosting service operated by the American company Dropbox, Inc.
 
 
 ***************  Deployed on amplify  ***********
-project url: `https://dev.d23guhwq7ww6uy.amplifyapp.com`
+project url: `https://drop.d3hdl7fdt65xo4.amplifyapp.com/`
 
 ## Task
 To replicate a project with same features like that of Dropbox
@@ -23,7 +23,6 @@ User - authentification
 Upload a file
 Versioning
 DNS/Routing
-
 Project was implemented using the react js framework and AWS 
 
 
@@ -35,7 +34,7 @@ to install react module and packages `npm install `
 ## Usage
 The usage of the project is very simple:
 kindly visit the link of the project below...
-`https://dev.d23guhwq7ww6uy.amplifyapp.com`
+`https://drop.d3hdl7fdt65xo4.amplifyapp.com/`
 
 ### steps: 
  =>  Sign in / Create an accunt
@@ -45,7 +44,7 @@ kindly visit the link of the project below...
  ........................ more...........................
 
  ## Check it out via the link below: 
- `  https://dev.d23guhwq7ww6uy.amplifyapp.com  `
+ `  https://drop.d3hdl7fdt65xo4.amplifyapp.com/`
 
 
 ### The Core Team
