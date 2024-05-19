@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "auth": {
+      "mydropboxmainc4d09ecb": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

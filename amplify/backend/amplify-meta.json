@@ -1,0 +1,135 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mydropboxmain-drop-7073f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767397794614:role/amplify-mydropboxmain-drop-7073f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767397794614:role/amplify-mydropboxmain-drop-7073f-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-mydropboxmain-drop-7073f-deployment",
+      "UnauthRoleName": "amplify-mydropboxmain-drop-7073f-unauthRole",
+      "StackName": "amplify-mydropboxmain-drop-7073f",
+      "StackId": "arn:aws:cloudformation:us-west-1:767397794614:stack/amplify-mydropboxmain-drop-7073f/e4a3a2c0-14ff-11ef-80bb-022c86915987",
+      "AmplifyAppId": "d3hdl7fdt65xo4"
+    }
+  },
+  "auth": {
+    "mydropboxmainc4d09ecb": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/auth/mydropboxmainc4d09ecb-cloudformation-template.json",
+        "logicalId": "authmydropboxmainc4d09ecb"
+      },
+      "lastPushTimeStamp": "2024-05-18T15:39:44.286Z",
+      "output": {
+        "UserPoolId": "us-west-1_f8mHRIGIY",
+        "AppClientIDWeb": "fcc8lni2kb1e36cjk0jnv2g80",
+        "AppClientID": "90cmiijprumlmonoafosdhfgq",
+        "IdentityPoolId": "us-west-1:55c0a908-35bf-4633-94e4-cd50aba96317",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-1:767397794614:userpool/us-west-1_f8mHRIGIY",
+        "IdentityPoolName": "mydropboxmainc4d09ecb_identitypool_c4d09ecb__drop",
+        "UserPoolName": "mydropboxmainc4d09ecb_userpool_c4d09ecb"
+      },
+      "lastPushDirHash": "2MZG9ueDncpIS/8Dsz8lA8Zvn4c="
+    }
+  },
+  "function": {
+    "mydropboxmaina58ed9cf": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "mydropboxmainc4d09ecb",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ],
+      "lastBuildTimeStamp": "2024-05-18T10:34:00.569Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-05-18T10:34:00.687Z",
+      "distZipFilename": "mydropboxmaina58ed9cf-6441434c66465347786e-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-mydropboxmain-drop-7073f-deployment",
+        "s3Key": "amplify-builds/mydropboxmaina58ed9cf-6441434c66465347786e-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/function/mydropboxmaina58ed9cf-cloudformation-template.json",
+        "logicalId": "functionmydropboxmaina58ed9cf"
+      },
+      "lastPushTimeStamp": "2024-05-18T15:39:44.291Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::767397794614:role/mydropboxmainLambdaRole012b2b23-drop",
+        "Region": "us-west-1",
+        "CloudWatchEventRule": "amplify-mydropboxmain-drop-7073f-fu-CloudWatchEvent-HcommTBPb9PY",
+        "Arn": "arn:aws:lambda:us-west-1:767397794614:function:mydropboxmaina58ed9cf-drop",
+        "Name": "mydropboxmaina58ed9cf-drop",
+        "LambdaExecutionRole": "mydropboxmainLambdaRole012b2b23-drop"
+      },
+      "lastPushDirHash": "p/vOXtRLPctZ31PrLMDSWdY9Jqk="
+    }
+  },
+  "storage": {
+    "s36720f61c": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "mydropboxmaina58ed9cf",
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ]
+        }
+      ],
+      "lastPushTimeStamp": "2024-05-18T15:39:44.309Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages36720f61c"
+      },
+      "output": {
+        "BucketName": "mydropboxmain9c40140b84224b74aeadb80c1919dcb07073f-drop",
+        "Region": "us-west-1"
+      },
+      "lastPushDirHash": "lt4OE+R+hu7bwHYHwaR7lT3cYoQ="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-05-18T15:39:46.469Z",
+      "output": {},
+      "lastPushDirHash": "zUSlSfKY+yumn/QLroDGLkWV6Q4="
+    }
+  }
+}

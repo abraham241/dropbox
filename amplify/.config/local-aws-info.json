@@ -1,0 +1,7 @@
+{
+  "drop": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "default"
+  }
+}
