@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/auth/mydropboxmainc4d09ecb-cloudformation-template.json",
         "logicalId": "authmydropboxmainc4d09ecb"
       },
-      "lastPushTimeStamp": "2024-05-18T15:39:44.286Z",
+      "lastPushTimeStamp": "2024-05-19T12:36:11.677Z",
       "output": {
         "UserPoolId": "us-west-1_f8mHRIGIY",
         "AppClientIDWeb": "fcc8lni2kb1e36cjk0jnv2g80",
@@ -79,7 +79,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/function/mydropboxmaina58ed9cf-cloudformation-template.json",
         "logicalId": "functionmydropboxmaina58ed9cf"
       },
-      "lastPushTimeStamp": "2024-05-18T15:39:44.291Z",
+      "lastPushTimeStamp": "2024-05-19T12:36:11.682Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::767397794614:role/mydropboxmainLambdaRole012b2b23-drop",
         "Region": "us-west-1",
@@ -106,7 +106,7 @@
           ]
         }
       ],
-      "lastPushTimeStamp": "2024-05-18T15:39:44.309Z",
+      "lastPushTimeStamp": "2024-05-19T12:36:13.337Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
         "logicalId": "storages36720f61c"
@@ -127,7 +127,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-mydropboxmain-drop-7073f-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "logicalId": "hostingamplifyhosting"
       },
-      "lastPushTimeStamp": "2024-05-18T15:39:46.469Z",
+      "lastPushTimeStamp": "2024-05-19T12:36:11.728Z",
       "output": {},
       "lastPushDirHash": "zUSlSfKY+yumn/QLroDGLkWV6Q4="
     }

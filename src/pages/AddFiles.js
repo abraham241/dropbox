@@ -57,8 +57,6 @@ const AddFiles = () => {
 
         <div className="">
             {file ? <img className="w-full object-cover" src={URL.createObjectURL(file)} alt="preview"/> : <p>Preview</p>}
-            
-            
         </div>
       </div>
     </div>

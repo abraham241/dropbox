@@ -82,7 +82,6 @@ const AllFile = () => {
             </button>
           </div>
           </div>
-          
         </div>
       ))}
     </div>
